@@ -1,7 +1,7 @@
 'use strict';
 
 // GoogleCouldMessagingで取得したAPIキーを設定
-var API_KEY = 'AIzaSyDpx5LWS0vpR_PfHJ4tMdWBwV9JR-N4QiE';
+var API_KEY = 'AIzaSyA-sFYyYGN_zj_fhJGepELQmK8U8Fk9l3M';
 
 // GCMのエンドポイントのBaseURL
 var GCM_ENDPOINT = 'https://android.googleapis.com/gcm/send';
@@ -51,7 +51,7 @@ function initialize() {
           console.log('Error during getSubscription()', err);
         });
   });
-  
+
   // cURLコマンドの領域をクリックしたらコマンドを全選択する
   curlCommandArea.addEventListener('click', function() {
     selectCurlText();
@@ -144,7 +144,7 @@ function showCurlCommand(mergedEndpoint) {
       ' -d "{\\"registration_ids\\":[\\"' + subscriptionId + '\\"]}"';
 
   curlCommandArea.textContent = curlCommand;
-  
+
   // コマンドを選択状態にする
   selectCurlText();
 }
