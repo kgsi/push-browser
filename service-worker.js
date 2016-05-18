@@ -10,7 +10,7 @@ self.addEventListener('push', function(event) {
   var body = 'ServiceWorkerの記事を公開しました';
   var icon = 'sample_512x512.png';
   var tag = 'simple-push-demo-notification-tag';
-  var url = 'https://aircolor.org';
+  var url = 'http://aircolor.hatenablog.com/entry/2016/05/08/103847';
 
   event.waitUntil(
     self.registration.showNotification(title, {
